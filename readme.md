@@ -5,6 +5,12 @@
 <em>Your task is to build an automatic process to ingest data on an on-demand basis. The data
 represents trips taken by different vehicles, and include a city, a point of origin and a destination.</em>
 
+For this challenge, I used this tech/tools/frameworks:
+  - Hadoop Cluster (using Yarn)
+  - Pyspark using master yarn, with dynamic allocation, for in case of multiples files in ingestion phase, or large amount records in table transformation phase, spark will provide and adjusts the resources according application demand.
+  - Hive table, partitioned by DT_PARTITION field.
+
+### Environment Initiation
 
 Please create this VARIABLES on UNIX Environment and run the commands below:
   - Remember to change user 123 in hdfs_prefix to a valid HDFS user according with Environment will be deployed.
